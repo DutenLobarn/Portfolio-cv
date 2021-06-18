@@ -1,0 +1,28 @@
+.contactWrapper{
+    @include wrapper($primaryColor,$secondaryColor);
+    height: 97.7vh;
+    justify-content: space-around;
+    h2{
+        font-size: $headlineSize;
+    }
+    .divider{
+        @include divider();
+    }
+    input{
+        font-size: 1.5rem;
+        border: none;
+        border-bottom: 2px darkgray solid;
+        width: 60%;
+    }
+    textarea{
+        font-size: 1.5rem;
+        border: none;
+        border-bottom: 2px darkgray solid;
+        margin-bottom: 1.5rem;
+        width: 60%;
+        height: 10.5rem;
+    }
+    button{
+    @include btn();
+    }
+}

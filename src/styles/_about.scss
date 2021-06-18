@@ -1,0 +1,39 @@
+article{
+    @include wrapper($thirdColor,$fourthColor);
+    padding: 0rem 0;
+    height: 97.8vh;
+    h2{
+        font-size: $headlineSize;
+    }
+    .divider{
+        @include divider();
+        margin: 1rem 0;
+    }
+    p{
+        font-size: 1.3rem;
+        text-align: start;
+        margin: 0.5rem;
+    }
+    .aboutLinkContainer{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1rem;
+        a{
+            @include roundImg();
+            background-color: $primaryColor;
+            &:hover{
+                transform: scale(.98);
+                background-color: $secondaryColor;
+            }
+        }
+    } 
+}
+.skillsImg1{
+    height: 4.5rem;
+    width: 4.5rem;
+}
+.skillsImg3{
+    height: 8.5rem;
+    width: 8.5rem;
+}

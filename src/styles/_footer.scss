@@ -1,0 +1,34 @@
+footer{
+    @include wrapper($thirdColor,$fourthColor);
+    border: $fourthColor 2px solid;
+    padding-bottom: 0;
+    height: 100vh;
+    h2{
+        font-size: 2.5rem;
+    }
+    .divider{
+        @include divider();
+    }
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    h3{
+        font-size: 2.5rem;
+        margin-top: 3rem;
+    }
+    a{
+        @include roundImg();
+        img{
+            @include roundImg();
+            &:hover{
+                transform: scale(.98);
+            }
+        }
+    }
+    .copyWright{
+        font-size: 1rem;
+        margin: 2rem;
+        margin-top: 7rem;
+    }
+}

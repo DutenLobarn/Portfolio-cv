@@ -1,0 +1,24 @@
+header{
+    @include wrapper(none, $fourthColor);
+    background-image: url(../assets/heroimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 87.7vh;
+    color: $thirdColor;
+    box-shadow: inset 0 0 200px 60px #282a2d;
+    img{
+        height: 15rem;
+        width: 15rem;
+    }
+    h1{
+        font-size: 4rem;
+        text-align: center;
+        margin: 2rem;
+    }
+    p{     
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 1rem;
+    }
+}

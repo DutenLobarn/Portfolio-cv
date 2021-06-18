@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+// Variables and Mixins
+@import "./config";
+
+// Import files
+@import "./Nav";
+@import "./hero";
+@import "./portfolio";
+@import "./skills";
+@import "./about";
+@import "./contact";
+@import "./footer";
+
+// Mediaquery
+
+// For medium devices
+@media(min-width: 768px){
+
+    nav {
+        // height: 15vh;
+    }
+    nav h3 {
+        font-size: 3.3rem;
+    }
+    nav button {
+        font-size: 2.5rem;
+        width: 10rem;
+        height: 4rem;
+    }
+    nav button div {
+        height: 3.5px;
+        width: 1.8rem;
+        margin-top: 3px;
+        border-radius: 5px;
+    }
+
+    ul {
+        // height: 15rem;
+        font-size: 2.5rem;
+    }
+    header {
+        // height: 85vh;
+        height: 53.8vh;
+        padding-top: 9rem;
+    }
+
+    header img {
+        height: 25rem;
+        width: 25rem;
+    }
+    header h1 {
+        font-size: 5rem;
+        margin: 3rem;
+    }
+    header p {
+        font-size: 2.3rem;
+    }
+
+    .portfolioWrapper h2 {
+        font-size: 4.5rem;
+    }
+    .portfolioToggleContainer{
+        margin: 4rem auto;
+        height: 55%;
+    }
+
+    .skillsbgcolor {
+        height: 64vh;
+    }
+    .skillsH2 {
+        font-size: 4.5rem;
+    }
+    .skillsImgWrapper {
+        height: 0vh;
+    }
+
+    .skillsImgWrapper .skillsImgContainer {
+        height: 8rem;
+        width: 8rem;
+    }
+    .skillsImgWrapper img {
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+    
+    article {
+        height: 63.9vh;
+    }
+    article h2 {
+        font-size: 4.5rem;
+    }
+    article .divider {
+        margin: 1rem 0;
+    }
+    article p {
+        font-size: 1.5rem;
+        margin: 1rem;
+        padding: 0px 3.5rem;
+    }
+    article .aboutLinkContainer a {
+        height: 8rem;
+        width: 8rem;
+    }
+    .skillsImg1 {
+        height: 5rem;
+        width: 5rem;
+    }
+    .skillsImg3 {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .contactWrapper {
+        padding: 1rem 0;
+        height: 64vh;
+    }
+    .contactWrapper h2 {
+        font-size: 4.5rem;
+    }
+    .contactWrapper .divider {
+        margin: 0rem 0
+    }
+    .contactWrapper input {
+        font-size: 2rem;
+        width: 70%;
+    }
+    .contactWrapper textarea {
+        font-size: 2rem;
+        width: 70%;
+        height: 20rem;
+    }
+    .contactWrapper button {
+        font-size: 3rem;
+        width: 10.5rem;
+        height: 4.5rem;
+}
+
+footer {
+    padding: 0;
+    .divider {
+        margin: 1rem 0;
+    }
+}
+footer h2 {
+    font-size: 3.5rem;
+}
+footer p {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+footer h3 {
+    font-size: 3.5rem;
+    margin-top: 5rem;
+}
+footer a {
+    height: 8rem;
+    width: 8rem;
+}
+footer a img {
+    height: 8rem;
+    width: 8rem;
+}
+footer .copyWright {
+    font-size: 1.5rem;
+    margin-top: 10rem;
+}
+}
+// ---------------------------------------
+// For large devices 
+@media(min-width: 992px){
+
+nav {
+    height: 10vh;
+}
+nav button {
+    width: 10rem;
+}
+
+header {
+    height: 90vh;
+    padding-top: 9rem;
+}
+
+.portfolioWrapper {
+    flex-flow: wrap;
+    padding: 2rem 0;
+}
+.portfolioWrapper .portfolioToggleContainer {
+    height: 80%;
+}
+.portfolioWrapper h2 {
+    width: 100%;
+    text-align-last: center;
+}
+.portfolioWrapper .divider {
+    margin: 3rem 40rem;
+}
+.portfolioWrapper .portfolioImg {
+    margin: 1rem 6rem;
+}
+
+.skillsbgcolor {
+        padding: 3rem 0;
+        height: 100vh;
+    }
+.skillsImgWrapper .skillsImgContainer {
+    height: 8rem;
+    width: 8rem;
+}
+.skillsImgWrapper img {
+    height: 5.5rem;
+    width: 5.5rem;
+}
+
+article {
+    height: 100vh;
+}
+article p {
+    font-size: 2rem;
+    margin: 1.5rem;
+    padding: 0px 3.5rem;
+    place-self: flex-start;
+}
+
+.contactWrapper {
+    padding: 3rem 0;
+    height: 100vh;
+}
+.contactWrapper .divider {
+    margin: 3rem 0;
+}
+.contactWrapper input {
+    font-size: 2rem;
+    width: 50%;
+}
+.contactWrapper textarea {
+    font-size: 2rem;
+    width: 50%;
+    height: 20rem;
+}
+.contactWrapper button {
+    font-size: 2rem;
+    width: 8.5rem;
+    height: 3.5rem;
+}
+
+footer{
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+footer h2 {
+    margin-top: 1rem;
+}
+}
+
+// ------------------------------------------
+// For XL-large devices 
+// @media(min-width: 1200px){
+
+// }

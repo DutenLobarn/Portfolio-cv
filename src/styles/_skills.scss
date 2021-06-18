@@ -1,0 +1,30 @@
+.skillsbgcolor{
+    background-color: $primaryColor;
+    padding: $paddinSize;
+    border: $secondaryColor 2px solid;
+    height: 97.6vh;
+}
+.skillsH2{
+    font-size: $headlineSize;
+    text-align: center;
+}
+.divider{
+    @include divider();
+    margin: 3rem auto;
+}
+.skillsImgWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    height: 68vh;
+    .skillsImgContainer{
+        @include roundImg();
+        background-color: $thirdColor;
+    }
+    img{
+        height: 5.5rem;
+        width: 5.5rem;
+    }
+}

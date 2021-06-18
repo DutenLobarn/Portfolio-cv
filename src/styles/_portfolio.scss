@@ -1,0 +1,60 @@
+.portfolioWrapper{
+    @include wrapper($thirdColor,$fourthColor);
+    h2{
+        font-size: $headlineSize;
+    }
+    .divider{
+        @include divider();
+    }
+    .portfolioImg{
+        @include portfolioImg();
+        &:hover{
+            transform: scale(.98);
+            // background-color: $secondaryColor;
+        }
+    }
+    .cover{
+    @include cover();
+    }
+    .portfolioToggleContainer{
+        @media(min-width: 768px){
+            margin: 4rem auto;
+            height: 55%;
+            padding: 1rem 0;
+        }
+        @include portfolioToggleContainer();
+            h2{
+                font-size: $headlineSize;
+            }
+            .divider{
+                @include divider();
+                margin: 2rem 0;
+            }
+            .portfolioToggleImg{
+            @include portfolioToggleImg();
+            margin-bottom: 1.5rem;
+            }
+            p{
+                margin-bottom: 1.5rem;
+                color: $fourthColor;
+                width: 23rem;
+                text-align: center;
+                font-size: 1.2rem;
+                line-height: 1.5rem;
+            }
+            button{
+                font-size: 1.4rem;
+                font-weight: bold;
+                width: 14rem;
+                height: 3rem;
+                border-radius: 0.5rem;
+                background-color: $primaryColor;
+                cursor: pointer;
+                color: $thirdColor;
+                &:hover{
+                    transform: scale(.98);
+                    background-color: $secondaryColor;
+                }
+            }
+        }
+    }

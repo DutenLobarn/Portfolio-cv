@@ -1,0 +1,102 @@
+// Variables----------------------
+
+// Colors
+$primaryColor: #fd3c3c;
+$secondaryColor: #a5281e;
+$thirdColor: #ffffff;
+$fourthColor: #000000;
+// Sizes
+$headlineSize: 3.5rem;
+// Paddings
+$paddinSize: 3rem 0;
+
+// Mixins------------------------
+
+// Wrappers
+@mixin wrapper($backgroundColor, $borderColor) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $backgroundColor;
+    color: $fourthColor;
+    padding: $paddinSize;
+    border: $borderColor 2px solid;
+}
+
+@mixin portfolioToggleContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: $thirdColor;
+    padding: 3rem 0;
+    border: 3px solid $fourthColor;
+    border-radius: 0.5rem;
+    width: 24rem;
+    margin: 2rem auto;
+    height: 91%;
+}
+@mixin portfolioImg {
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    // width: 20rem;
+    max-width: 20rem;
+    height: 18rem;
+    max-height: 18rem;
+    border: 2px solid $fourthColor;
+}
+@mixin cover {
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0%;
+}
+@mixin roundImg {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin backgroundimg {
+    background-image: url(../assets/heroimg.jpg);
+    background-repeat: no-repeat;
+}
+
+@mixin portfolioToggleImg {
+    margin-bottom: 3rem;
+    border-radius: 0.5rem;
+    max-width: 22rem;
+    max-height: 14rem;
+}
+
+// Buttons
+@mixin btn {
+    font-size: 1.5rem;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    background-color: $primaryColor;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    color: $thirdColor;
+        &:hover{
+            transform: scale(.98);
+            background-color: $secondaryColor;
+        }
+}
+// Divider under headlines
+@mixin divider {
+    background-color: $fourthColor;
+    width: 100%;
+    max-width: 14rem;
+    height: 0.25rem;
+    border-radius: 1rem;
+    margin: 3rem 0;
+}
