@@ -108,7 +108,7 @@ header p {
   border: #000000 2px solid;
 }
 .portfolioWrapper h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .portfolioWrapper .divider {
   background-color: #000000;
@@ -157,7 +157,7 @@ header p {
   }
 }
 .portfolioWrapper .portfolioToggleContainer h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .portfolioWrapper .portfolioToggleContainer .divider {
   background-color: #000000;
@@ -174,6 +174,9 @@ header p {
   max-width: 22rem;
   max-height: 14rem;
   margin-bottom: 1.5rem;
+}
+.portfolioWrapper .portfolioToggleContainer .portfolioToggleImg:hover {
+  transform: scale(0.98);
 }
 .portfolioWrapper .portfolioToggleContainer p {
   margin-bottom: 1.5rem;
@@ -206,7 +209,7 @@ header p {
 }
 
 .skillsH2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
   text-align: center;
 }
 
@@ -255,7 +258,7 @@ article {
   height: 97.8vh;
 }
 article h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 article .divider {
   background-color: #000000;
@@ -314,7 +317,7 @@ article .aboutLinkContainer a:hover {
   justify-content: space-around;
 }
 .contactWrapper h2 {
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 .contactWrapper .divider {
   background-color: #000000;

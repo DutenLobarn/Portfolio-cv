@@ -33,6 +33,10 @@
             .portfolioToggleImg{
             @include portfolioToggleImg();
             margin-bottom: 1.5rem;
+            &:hover{
+                transform: scale(.98);
+                // background-color: $secondaryColor;
+            }
             }
             p{
                 margin-bottom: 1.5rem;
