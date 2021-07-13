@@ -1,12 +1,16 @@
 .contactWrapper{
     @include wrapper($primaryColor,$secondaryColor);
-    height: 97.7vh;
+    height: 100vh;
     justify-content: space-around;
+    padding: 0rem 0;
     h2{
         font-size: $headlineSize;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
     }
     .divider{
         @include divider();
+        margin: 0;
     }
     input{
         font-size: 1.5rem;
@@ -18,7 +22,6 @@
         font-size: 1.5rem;
         border: none;
         border-bottom: 2px darkgray solid;
-        margin-bottom: 1.5rem;
         width: 60%;
         height: 10.5rem;
     }

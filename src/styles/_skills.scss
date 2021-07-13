@@ -1,16 +1,17 @@
 .skillsbgcolor{
     background-color: $primaryColor;
-    padding: $paddinSize;
+    padding-bottom: 0rem;
     border: $secondaryColor 2px solid;
-    height: 97.6vh;
+    height: 100vh;
 }
 .skillsH2{
     font-size: $headlineSize;
     text-align: center;
+    margin-block-start: 0.5em;
 }
 .divider{
     @include divider();
-    margin: 3rem auto;
+    margin: 2rem auto;
 }
 .skillsImgWrapper{
     display: grid;
@@ -18,7 +19,7 @@
     gap: 10px;
     justify-items: center;
     align-items: center;
-    height: 68vh;
+    height: 75vh;
     .skillsImgContainer{
         @include roundImg();
         background-color: $thirdColor;

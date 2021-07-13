@@ -1,21 +1,28 @@
 footer{
     @include wrapper($thirdColor,$fourthColor);
     border: $fourthColor 2px solid;
-    padding-bottom: 0;
+    padding: 0rem 0;
+    justify-content: space-evenly;
     height: 100vh;
     h2{
         font-size: 2.5rem;
+        margin-block-end: 0em;
+        margin-block-start: 0em;
+
     }
     .divider{
         @include divider();
+        margin: 0rem 0;
     }
     p{
         font-size: 1.5rem;
-        margin-bottom: 0.5rem;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
     }
     h3{
         font-size: 2.5rem;
-        margin-top: 3rem;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
     }
     a{
         @include roundImg();
@@ -28,7 +35,6 @@ footer{
     }
     .copyWright{
         font-size: 1rem;
-        margin: 2rem;
-        margin-top: 7rem;
+        margin-bottom: -1rem;
     }
 }

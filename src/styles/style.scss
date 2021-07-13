@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: monospace;
-}
+@import "./reset";
 
 // Variables and Mixins
 @import "./config";
@@ -19,11 +14,134 @@
 
 // Mediaquery
 
-// For medium devices
-@media(min-width: 768px){
-
+// For phone devices rotated
+@media(min-width: 736px){
     nav {
-        // height: 15vh;
+        height: 15vh;
+        
+        section{
+            margin-top: 0.4rem;
+        }
+    
+
+        ul{
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    }
+    
+    header{
+        height: 85vh;
+    }
+    
+    .portfolioWrapper {
+        .cover {
+            display: flex;
+            align-items: center;
+        }
+        h2{
+            margin-block-start: 0.3em;
+        }
+        .portfolioImg{
+            max-width: 38rem;
+            max-height: 16rem;
+        }
+        .portfolioToggleContainer {
+            width: 27rem;
+            h2{
+                font-size: 1.8rem;
+            }
+            .divider{
+                margin: 0.5rem 0;
+            }
+            .portfolioToggleImg {
+                max-width: 16rem;
+                max-height: 10rem;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                width: 26rem;
+                font-size: 1rem;
+                margin-block-end: 0em;
+            }
+            button{
+                font-size: 1rem;
+                width: 10rem;
+                height: 2rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+    .skillsbgcolor {
+        h2{
+            margin-block-end: 0em;
+            margin-block-start: 0.3em;
+        }
+        
+        .skillsImgContainer {
+            height: 4.1rem;
+            width: 4.1rem;
+        }
+        img {
+            height: 2.7rem;
+            width: 2.7rem;
+        }
+        .divider {
+            margin: 1rem auto;
+        }
+    }
+
+    .aboutWrapper{
+        h2{
+            margin-block-end: 0em;
+            margin-block-start: 0.3em;
+        }
+        p{
+            font-size: 1rem;
+        }
+        .aboutLinkContainer {
+            margin-top: 0.5rem;
+            a{
+                height: 4.1rem;
+                width: 4.1rem;
+            }
+            .skillsImg1 {
+                height: 2.7rem;
+                width: 2.7rem;
+            }
+            .skillsImg3 {
+                height: 5.2rem;
+                width: 5.2rem;
+            }
+        }
+    }
+
+    .contactWrapper {
+        input {
+            font-size: 1.2rem;
+        }
+        textarea {
+            font-size: 1.2rem;
+            height: 8rem;
+        }
+    }
+
+    footer{
+        a{
+            height: 4.1rem;
+        }
+        .skillsImg{
+            height: 4.1rem;
+            width: 4.1rem
+        }
+    }
+}
+
+// For iPads, tablets
+@media(min-width: 768px){
+    nav {
+        height: 10vh;
     }
     nav h3 {
         font-size: 3.3rem;
@@ -41,15 +159,13 @@
     }
 
     ul {
-        // height: 15rem;
         font-size: 2.5rem;
-    }
-    header {
-        // height: 85vh;
-        height: 53.8vh;
-        padding-top: 9rem;
+        flex-direction: column;
     }
 
+    header {
+        height: 90vh;
+    }
     header img {
         height: 25rem;
         width: 25rem;
@@ -61,64 +177,82 @@
     header p {
         font-size: 2.3rem;
     }
-
-    .portfolioWrapper h2 {
+    
+    .portfolioWrapper{
+    h2 {
         font-size: 4.5rem;
     }
-    .portfolioToggleContainer{
-        margin: 4rem auto;
-        height: 55%;
+    // Toggle elements
+    .cover{
+        .portfolioToggleContainer{
+                height: 85%;
+            h2{
+                font-size: 2.8rem;
+            }
+            .portfolioToggleImg {
+                max-width: 25rem;
+                max-height: 20rem;
+            }
+            p{
+                font-size: 1.5rem;
+            }
+            button{
+                font-size: 1.7rem;
+                width: 14rem;
+                height: 3.5rem;
+            }
+        }
     }
+}
 
     .skillsbgcolor {
-        height: 64vh;
-    }
-    .skillsH2 {
-        font-size: 4.5rem;
-    }
-    .skillsImgWrapper {
-        height: 0vh;
-    }
-
+        height: 100vh;
+        .skillsH2 {
+            font-size: 4.5rem;
+        }
+        .divider {
+            margin: 3rem auto;
+        }
+        .skillsImgWrapper {
+            height: 80vh;
+        }
+    
     .skillsImgWrapper .skillsImgContainer {
-        height: 8rem;
-        width: 8rem;
+        height: 8.5rem;
+        width: 8.5rem;
     }
     .skillsImgWrapper img {
-        height: 5.5rem;
-        width: 5.5rem;
+        height: 5.8rem;
+        width: 5.8rem;
     }
-    
-    article {
-        height: 63.9vh;
-    }
-    article h2 {
-        font-size: 4.5rem;
-    }
-    article .divider {
-        margin: 1rem 0;
-    }
-    article p {
-        font-size: 1.5rem;
-        margin: 1rem;
-        padding: 0px 3.5rem;
-    }
-    article .aboutLinkContainer a {
-        height: 8rem;
-        width: 8rem;
-    }
-    .skillsImg1 {
-        height: 5rem;
-        width: 5rem;
-    }
-    .skillsImg3 {
-        height: 10rem;
-        width: 10rem;
-    }
+}
+
+    .aboutWrapper {
+        height: 100vh;
+        justify-content: space-around;
+        h2 {
+            font-size: 4.5rem;
+        }
+        p {
+            font-size: 1.8rem;
+            padding: 0px 3.5rem;
+        }
+        .aboutLinkContainer a {
+            height: 8.5rem;
+            width: 8.5rem;
+            .skillsImg1 {
+                height: 5.5rem;
+                width: 5.5rem;
+            }
+            .skillsImg3 {
+                height: 10.5rem;
+                width: 10.5rem;
+            }
+        }
+}
 
     .contactWrapper {
-        padding: 1rem 0;
-        height: 64vh;
+        height: 100vh;
     }
     .contactWrapper h2 {
         font-size: 4.5rem;
@@ -142,125 +276,61 @@
 }
 
 footer {
-    padding: 0;
-    .divider {
+    h2 {
+        font-size: 3.5rem;
+    }
+    p {
+        font-size: 2rem;
         margin: 1rem 0;
     }
-}
-footer h2 {
-    font-size: 3.5rem;
-}
-footer p {
-    font-size: 2rem;
-    margin: 1rem 0;
-}
-footer h3 {
-    font-size: 3.5rem;
-    margin-top: 5rem;
-}
-footer a {
-    height: 8rem;
-    width: 8rem;
-}
-footer a img {
-    height: 8rem;
-    width: 8rem;
-}
-footer .copyWright {
-    font-size: 1.5rem;
-    margin-top: 10rem;
-}
-}
-// ---------------------------------------
-// For large devices 
-@media(min-width: 992px){
-
-nav {
-    height: 10vh;
-}
-nav button {
-    width: 10rem;
-}
-
-header {
-    height: 90vh;
-    padding-top: 9rem;
-}
-
-.portfolioWrapper {
-    flex-flow: wrap;
-    padding: 2rem 0;
-}
-.portfolioWrapper .portfolioToggleContainer {
-    height: 80%;
-}
-.portfolioWrapper h2 {
-    width: 100%;
-    text-align-last: center;
-}
-.portfolioWrapper .divider {
-    margin: 3rem 40rem;
-}
-.portfolioWrapper .portfolioImg {
-    margin: 1rem 6rem;
-}
-
-.skillsbgcolor {
-        padding: 3rem 0;
-        height: 100vh;
+    h3 {
+        font-size: 3.5rem;
+        margin-top: 5rem;
     }
-.skillsImgWrapper .skillsImgContainer {
-    height: 8rem;
-    width: 8rem;
+    a {
+        height: 8rem;
+        width: 8rem;
+        .skillsImg {
+            height: 8.5rem;
+            width: 8.5rem;
+        }
+    }
+    .copyWright {
+        font-size: 1.5rem;
+        margin-top: 10rem;
+    }
 }
-.skillsImgWrapper img {
-    height: 5.5rem;
-    width: 5.5rem;
 }
 
-article {
-    height: 100vh;
-}
+// For laptops 
+@media(min-width: 992px){
 article p {
-    font-size: 2rem;
-    margin: 1.5rem;
-    padding: 0px 3.5rem;
     place-self: flex-start;
 }
-
-.contactWrapper {
-    padding: 3rem 0;
-    height: 100vh;
-}
-.contactWrapper .divider {
-    margin: 3rem 0;
-}
-.contactWrapper input {
-    font-size: 2rem;
-    width: 50%;
-}
-.contactWrapper textarea {
-    font-size: 2rem;
-    width: 50%;
-    height: 20rem;
-}
-.contactWrapper button {
-    font-size: 2rem;
-    width: 8.5rem;
-    height: 3.5rem;
 }
 
-footer{
-    justify-content: space-around;
-    padding: 1rem 0;
-}
-footer h2 {
-    margin-top: 1rem;
-}
-}
+// For Ipad devices rotated
 
-// ------------------------------------------
-// For XL-large devices 
-// @media(min-width: 1200px){
+@media (min-width: 1024px){
+        ul{
+            flex-direction: row;
+            justify-content: space-around;
+            height: 10vh;
+        }
 
-// }
+    .skillsbgcolor{
+
+        .divider {
+            margin: 1rem auto;
+        }
+    }
+
+    footer{
+        h3 {
+            margin-top: 0rem;
+        }
+        .copyWright {
+            margin-top: 4rem;
+        }
+    } 
+}

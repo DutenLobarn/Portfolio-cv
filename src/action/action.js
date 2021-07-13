@@ -37,6 +37,26 @@ const toggleMenuAction = (param) => {
             payload: param
         }};
 
+    const fromValueAction = (param) => {
+        return {
+            type: 'FROMVALUE',
+            payload: param
+        }};
+    const guestNameValueAction = (param) => {
+        return {
+            type: 'GUESTNAME',
+            payload: param
+        }};
+    const phoneNumberValueAction = (param) => {
+        return {
+            type: 'PHONENUMBER',
+            payload: param
+        }};
+    const textValueAction = (param) => {
+        return {
+            type: 'TEXT',
+            payload: param
+        }};
 
     export {
         toggleMenuAction,
@@ -45,5 +65,9 @@ const toggleMenuAction = (param) => {
         toggleProject3Action,
         toggleProject4Action,
         toggleProject5Action,
-        toggleProject6Action
+        toggleProject6Action,
+        fromValueAction,
+        guestNameValueAction,
+        phoneNumberValueAction,
+        textValueAction
     };

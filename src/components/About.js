@@ -9,7 +9,7 @@ import cv from "../assets/cv.pdf";
 
 export default function About() {
     return (
-        <article className="aboutWrapper">
+        <article className="aboutWrapper" id="about">
             <h2 className="aboutH2">About</h2>
             <div className="divider"></div>
             <p className="aboutP">Hello, I´m Mandus Lindström born year 1985 in Örnsköldsvik, Sweden.</p>

@@ -15,7 +15,7 @@ import figmaImg from "../assets/figma.png";
 
 export default function Skills() {
     return (
-        <div className="skillsbgcolor">
+        <div className="skillsbgcolor" id="skills">
             <h2 className='skillsH2'>Skills</h2>
 
             <div className="divider"></div>

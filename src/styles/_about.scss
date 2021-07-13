@@ -1,9 +1,11 @@
 article{
     @include wrapper($thirdColor,$fourthColor);
     padding: 0rem 0;
-    height: 97.8vh;
+    height: 100vh;
     h2{
         font-size: $headlineSize;
+        margin-block-end: 0em;
+        margin-block-start: 0em;
     }
     .divider{
         @include divider();

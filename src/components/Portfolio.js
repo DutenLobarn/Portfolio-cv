@@ -25,7 +25,6 @@ import {
 } from '../action/action';   
 
 export default function Portfolio() {
-    
     // redux useSelector
     const toggleProject1 = useSelector(state => state.toggleProject1);
     const toggleProject2 = useSelector(state => state.toggleProject2);
@@ -46,7 +45,7 @@ export default function Portfolio() {
     function handletoggleProject6(e) { dispatch(toggleProject6Action(!toggleProject6));}
 
     return (
-        <section className="portfolioWrapper">
+        <section className="portfolioWrapper" id="portfolio">
             <h2>Portfolio</h2>
 
             <div className="divider"></div>

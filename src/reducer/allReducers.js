@@ -6,6 +6,10 @@ import {
     toggleProject4,
     toggleProject5,
     toggleProject6, 
+    fromValueReducer,
+    guestNameValueReducer,
+    phoneNumberValueReducer,
+    textValueReducer
 } from "./reducer";
 
 import { combineReducers } from "redux";
@@ -17,7 +21,11 @@ const allReducers = combineReducers({
     toggleProject3,
     toggleProject4,
     toggleProject5,
-    toggleProject6
+    toggleProject6,
+    fromValueReducer,
+    guestNameValueReducer,
+    phoneNumberValueReducer,
+    textValueReducer
 })
 
 export default allReducers;

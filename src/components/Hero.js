@@ -6,9 +6,7 @@ import Img from "../assets/Logo/transparent background files/output-onlinepngtoo
 export default function Hero() {
     return (
         <header className="heroWrapper">
-            {/* <div className="darkCover">sdagf</div> */}
             <img className="heroImg" src={Img} alt='Eagle'></img>
-            {/* <h1>Ten Fingers</h1> */}
             <p>Front End - Web and App Development - Worlwide Reach</p>
         </header>
     )

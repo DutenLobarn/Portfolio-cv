@@ -11,13 +11,11 @@ export default function Footer() {
             <p>Koppargården 33B</p>
             <p>261 43, Landskrona</p>
             <p>Sweden</p>
-            {/* <div> */}
-                <h3>Social Media</h3>
-                <div className="divider"></div>
-                <a href="https://www.facebook.com/mandus.lindstrom" target="_blank" rel="noreferrer">
-                    <img className="skillsImg" src={fbImg} alt='fbImg'></img>
-                </a>
-            {/* </div> */}
+            <h3>Social Media</h3>
+            <div className="divider"></div>
+            <a href="https://www.facebook.com/mandus.lindstrom" target="_blank" rel="noreferrer">
+                <img className="skillsImg" src={fbImg} alt='fbImg'></img>
+            </a>
             <p className="copyWright">Copyright © Ten Fingers 2021</p>
         </footer>
     )

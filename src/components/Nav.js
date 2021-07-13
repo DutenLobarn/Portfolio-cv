@@ -18,17 +18,21 @@ export default function Nav() {
     // Functions for dropdown menu
     function handleToggleMenu(e) { dispatch(toggleMenuAction(!toggleMenu));}
 
-    const scrollWinPortfolio = () => {
-        return (window.scrollTo(0, 651), handleToggleMenu())
+    const scrollWinPortfolio = () => { 
+        document.getElementById('portfolio').scrollIntoView({behavior:"smooth"})
+        handleToggleMenu()
     }
     const scrollWinSkills = () => {
-        return (window.scrollTo(0, 2505), handleToggleMenu())
+        document.getElementById('skills').scrollIntoView({behavior:"smooth"})
+        handleToggleMenu()
     }
     const scrollWinAbout = () => {
-        return (window.scrollTo(0, 3156), handleToggleMenu())
+        document.getElementById('about').scrollIntoView({behavior:"smooth"})
+        handleToggleMenu()
     }
     const scrollWinContact = () => {
-        return (window.scrollTo(0, 3808), handleToggleMenu())
+        document.getElementById('contact').scrollIntoView({behavior:"smooth"})
+        handleToggleMenu()
     }
 
     // Style
@@ -48,16 +52,15 @@ export default function Nav() {
                 </button>
             </div>
         </nav>
+            {toggleMenu ?
+            
             <Fade>
-                {toggleMenu ?
-                <ul className='navUl'>
-                    <li onClick={scrollWinPortfolio}className='navLi'>Portfolio</li>
-                    <li onClick={scrollWinSkills} className='navLi'>Skills</li>
-                    <li onClick={scrollWinAbout} className='navLi'>About</li>
-                    <li onClick={scrollWinContact} className='navLi'>Contact</li>
-                </ul>
-                : ''}
-            </Fade>
+                <li onClick={scrollWinPortfolio}className='navLi'>Portfolio</li>
+                <li onClick={scrollWinSkills} className='navLi'>Skills</li>
+                <li onClick={scrollWinAbout} className='navLi'>About</li>
+                <li onClick={scrollWinContact} className='navLi'>Contact</li>
+            </Fade>            
+            : ''}
     </>
     )
 }

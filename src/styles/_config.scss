@@ -6,7 +6,7 @@ $secondaryColor: #a5281e;
 $thirdColor: #ffffff;
 $fourthColor: #000000;
 // Sizes
-$headlineSize: 3rem;
+$headlineSize: 2.8rem;
 // Paddings
 $paddinSize: 3rem 0;
 
@@ -29,22 +29,21 @@ $paddinSize: 3rem 0;
     align-items: center;
     flex-direction: column;
     background: $thirdColor;
-    padding: 3rem 0;
     border: 3px solid $fourthColor;
     border-radius: 0.5rem;
     width: 24rem;
-    margin: 2rem auto;
-    height: 91%;
+    margin: 4% auto;
+    height: 95%;
+    justify-content: space-around;
 }
 @mixin portfolioImg {
     margin-bottom: 3rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    // width: 20rem;
     max-width: 20rem;
     height: 18rem;
-    max-height: 18rem;
     border: 2px solid $fourthColor;
+    object-fit: cover;
 }
 @mixin cover {
     height: 100vh;
@@ -72,6 +71,7 @@ $paddinSize: 3rem 0;
     border-radius: 0.5rem;
     max-width: 22rem;
     max-height: 14rem;
+    object-fit: cover;
 }
 
 // Buttons
@@ -98,5 +98,4 @@ $paddinSize: 3rem 0;
     max-width: 14rem;
     height: 0.25rem;
     border-radius: 1rem;
-    margin: 3rem 0;
 }

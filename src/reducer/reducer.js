@@ -50,3 +50,34 @@ export const toggleProject6 = (state = false, action) => {
         default:
             return state;
     }};
+
+    // email from the guest
+
+    export const fromValueReducer = (state = '', action) => {
+        switch(action.type) {
+            case 'FROMVALUE':
+                return action.payload;
+            default:
+                return state;
+        }};
+    export const guestNameValueReducer = (state = '', action) => {
+        switch(action.type) {
+            case 'GUESTNAME':
+                return action.payload;
+            default:
+                return state;
+        }};
+    export const phoneNumberValueReducer = (state = '', action) => {
+        switch(action.type) {
+            case 'PHONENUMBER':
+                return action.payload;
+            default:
+                return state;
+        }};
+    export const textValueReducer = (state = '', action) => {
+        switch(action.type) {
+            case 'TEXT':
+                return action.payload;
+            default:
+                return state;
+        }};
